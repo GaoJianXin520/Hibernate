@@ -26,6 +26,7 @@ public class HibernateSelect {
 			session.save(user);
 			tx.commit();
 		} catch (Exception e) {
+			e.printStackTrace();
 			tx.rollback();
 		} finally {
 			session.close();
