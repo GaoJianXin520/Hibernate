@@ -19,5 +19,8 @@
 		<!-- 3、加载映射文件 -->
 		<mapping resource="com/hibernate/entity/Customer.hbm.xml" />
 		<mapping resource="com/hibernate/entity/LinkMan.hbm.xml" />
+		
+		<mapping resource="com/hibernate/manytomany/User.hbm.xml" />
+		<mapping resource="com/hibernate/manytomany/Role.hbm.xml" />
 	</session-factory>
 </hibernate-configuration>
