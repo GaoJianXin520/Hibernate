@@ -70,16 +70,16 @@ public class HibernateOneToMany {
 			tx = session.beginTransaction();
 			
 			Customer customer = new Customer();
-			customer.setCustName("百度");
-			customer.setCustLevel("普通用户");
+			customer.setCustName("传智播客");
+			customer.setCustLevel("vip");
 			customer.setCustSource("网络");
-			customer.setCustPhone("321");
-			customer.setMobile("654");
+			customer.setCustPhone("123");
+			customer.setMobile("456");
 			
 			LinkMan linkMan = new LinkMan();
-			linkMan.setLkm_name("小明");
+			linkMan.setLkm_name("lucy");
 			linkMan.setLkm_gender("男");
-			linkMan.setLkm_phone("222");
+			linkMan.setLkm_phone("321");
 			
 			customer.getSetLinkMan().add(linkMan);
 			session.save(customer);
