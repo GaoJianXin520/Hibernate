@@ -7,7 +7,7 @@ public class LinkMan {
 	private String lkm_gender;
 	private String lkm_phone;
 	
-	private Customer customer;
+	private Customer customer; 
 	
 	public Integer getLkm_id() {
 		return lkm_id;
